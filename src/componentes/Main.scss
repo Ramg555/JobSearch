@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+
+.contenedor_bloques{
+    display: flex;
+    // text-align: center;
+    // justify-content: center;
+    flex-direction: column;
+    .bloque{
+        margin: auto;
+        display: flex;
+        width: 70%;
+        height: 150px;
+        margin-top: 60px;
+        background: #fff;
+        border-radius: 3px;
+        box-shadow: 3px 10px 40px  #63baba50;
+        .imagen{
+            margin: 30px 30px;
+        }
+        .caracteristicas{
+            width: 25%;
+            align-items: center;
+            .caracteristicas_1{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: auto;
+                padding-top: 15px;
+                .empresa{
+                    color: #5da5a4;
+                    font-weight: 500;
+                    font-size: 16px;
+                    margin: 0;
+                }
+                .new{
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 10px;
+                    border-radius: 20px;
+                    background: #5da5a4;
+                    width:min-content;
+                    height: max-content;
+                    padding: 6px;
+                    margin: 0;
+
+                }
+                .featured{
+                    color: #fff;
+                    font-weight: 600;
+                    border-radius: 20px;
+                    font-size: 10px;
+                    background: #000;
+                    width:min-content;
+                    height: max-content;
+                    padding: 6px;
+                    margin: 0;
+
+                }
+            }
+            .puesto{
+                cursor: pointer;
+                font-weight: 700;
+                margin-left: 0px;
+                display: flex;
+                margin-top: 5px;
+                font-size: 18px;
+            }:hover{
+                color: #63baba;
+            }
+            .adicional_contenedor{
+                display: flex;
+                justify-content: space-between;
+                .adicional{
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #8D9797;
+                }
+            }
+        }
+        .etiquetas{
+            width: 40%;
+            margin-left: 150px;
+            .lista_etiquetas{
+                display: flex;
+                margin: 60px 0px;
+                align-items: center;
+                justify-content: space-between;
+                li{
+                    cursor: pointer;
+                    text-decoration: none;
+                    list-style: none;
+                    font-size: 13px;
+                    font-weight: 500;
+                    background: #F0F6F6;
+                    border-radius: 3px;
+                    padding: 5px;
+                    color: #5da5a4;
+                }:hover{
+                    color: #fff;
+                    background: #63baba;
+                }
+            }
+        }
+    }
+}

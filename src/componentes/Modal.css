@@ -1,0 +1,139 @@
+.contenedor_modal {
+  position: absolute;
+  top: -100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedor_modal .modal {
+  background: #fff;
+  border-radius: 3px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 10px 10px 0px;
+}
+
+.contenedor_modal .modal .etiquetas {
+  width: 50%;
+}
+
+.contenedor_modal .modal .etiquetas .lista_etiquetas {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contenedor_modal .modal .etiquetas .lista_etiquetas li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.contenedor_modal .modal .etiquetas .lista_etiquetas li span {
+  padding: 3;
+  color: #63baba;
+  background: #F0F6F6;
+  padding: 4px 6px 4px 6px;
+  border-radius: 3px 0px 0px 3px;
+  font-weight: 500;
+}
+
+.contenedor_modal .modal .etiquetas .lista_etiquetas li p {
+  cursor: pointer;
+  margin-top: 0;
+  padding: 4px 6px 4px 6px;
+  margin: auto;
+  color: #fff;
+  background: #63baba;
+  border-radius: 0px 3px 3px 0px;
+}
+
+.contenedor_modal .modal .clear {
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 30px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #63baba;
+}
+
+.active {
+  -webkit-animation-name: animation_show;
+          animation-name: animation_show;
+  -webkit-animation-duration: .6s;
+          animation-duration: .6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animation_show {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 100px;
+  }
+}
+
+@keyframes animation_show {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 100px;
+  }
+}
+
+.desactive {
+  -webkit-animation-name: animation_disapear;
+          animation-name: animation_disapear;
+  -webkit-animation-duration: .6s;
+          animation-duration: .6s;
+}
+
+@-webkit-keyframes animation_disapear {
+  0% {
+    top: 100px;
+  }
+  100% {
+    top: -100px;
+  }
+}
+
+@keyframes animation_disapear {
+  0% {
+    top: 100px;
+  }
+  100% {
+    top: -100px;
+  }
+}
+/*# sourceMappingURL=Modal.css.map */

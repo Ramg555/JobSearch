@@ -1,0 +1,77 @@
+.contenedor_modal{
+    position: absolute;
+    top: -100px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    .modal{
+        background: #fff;
+        border-radius: 3px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        width: 70%;
+        flex-direction: row;
+        justify-content:space-between;
+        padding: 10px 10px 10px 0px;
+        .etiquetas{
+            width: 50%;
+            .lista_etiquetas{
+                width: 100%;
+                height: fit-content;
+                margin: 0;
+                display: flex;
+                justify-content: space-around;
+                li{
+                    display: flex;
+                    height: fit-content;
+                    span{
+                        padding: 3;
+                        color: #63baba;
+                        background: #F0F6F6;
+                        padding: 4px 6px 4px 6px ;
+                        border-radius: 3px 0px 0px 3px;
+                        font-weight: 500;
+                    }
+                    p{
+                        cursor: pointer;
+                        margin-top: 0;
+                        padding: 4px 6px 4px 6px ;
+                        margin: auto;
+                        color: #fff;
+                        background: #63baba;
+                        border-radius: 0px 3px 3px 0px;
+                    }:hover{
+                        // background: #000;
+                    }
+                }
+            }
+        }
+        .clear{
+            cursor: pointer;
+            font-weight: 500;
+            margin-right: 30px;
+            text-decoration-line: underline ;
+            color: #63baba;
+        }
+    }
+}
+.active{
+    animation-name: animation_show;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+@keyframes animation_show{
+    0% {top:-100px; }
+    100%{top:100px; }
+}
+.desactive{
+    animation-name: animation_disapear;
+    animation-duration: .6s;
+}
+@keyframes animation_disapear{
+    0%{top:100px;}
+    100%{top:-100px;}
+}
+
+
